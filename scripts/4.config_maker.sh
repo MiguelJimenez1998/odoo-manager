@@ -1,4 +1,4 @@
-cd 
+cd
 CURRENT_PATH=$(pwd)
 
 # 1. Get parameters
@@ -24,5 +24,5 @@ sed -i 's/<db_password>/'$DB_PASSWORD'/' $SERVICE_NAME
 
 # 3. Sort as real config
 sudo mkdir /etc/odoo
-sudo cp $SERVICE_NAME /etc/odoo
+sudo cp $SERVICE_NAME /etc/odoo/$SERVICE_NAME.conf
 rm $SERVICE_NAME
