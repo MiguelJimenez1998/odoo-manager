@@ -20,3 +20,7 @@ pip --version
 
 # 3. remove miniconda installer
 rm miniconda_installer
+
+# 4. crear arcivos para activar los entornos
+echo 'export PATH=/home/odoo/miniconda3/bin:$PATH' > startCondaBase.sh
+echo 'export PATH=/home/odoo/miniconda3/envs/odoo/bin:$PATH' > startCondaOdoo.sh

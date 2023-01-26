@@ -13,7 +13,7 @@ read DB_PASSWORD
 
 
 ADDONS_PATH=$CURRENT_PATH/src/odoo/addons
-SERVICE_NAME=$1.conf
+SERVICE_NAME=$1
 
 # 2. Replace params in config file
 sed 's|<addons_path>|'$ADDONS_PATH'|' templates/config.conf > $SERVICE_NAME
