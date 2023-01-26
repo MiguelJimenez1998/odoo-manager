@@ -1,8 +1,10 @@
-#cd 
+# Se debe crear el usuario postgres odoo
+
+cd 
 CURRENT_PATH=$(pwd)
 
 # 1. Get parameters
-PYTHON_ENV=$CURRENT_PATH/miniconda/envs/odoo/bin
+PYTHON_ENV=$CURRENT_PATH/miniconda3/envs/odoo/bin
 SERVICE_NAME=$1
 
 # 2. Replace params in config file
